@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## Restaurant Search (projeto DIO)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido durante o bootcamp React Web Developer da Digital Innovation One (DIO)
 
-## Available Scripts
+O projeto consiste em um aplicação web que busca restaurantes próximos da localização do usuário (conforme obtida pelo navegador com autorização do usuário). 
 
-In the project directory, you can run:
+Os restaurantes são exibidos em uma lista e um carrossel de fotos, além de marcadores no mapa.
 
-### `yarn start`
+Clicando sobre um restaurante da lista uma janela é exibida contendo mais informações e fotos do restaurante
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O usuário ainda pode utilizar um campo de busca para filtrar os restaurantes por de acordo com nome ou tipo de comida
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tecnologias e ferramentas utilizadas
 
-### `yarn test`
+- JavaScript
+- ReactJS
+- material-ui
+- styled-components
+- Redux
+- react-lottie
+- react-slick
+- react-rating-stars-component
+- google-maps-react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Para executar o projeto :computer:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- clone este repositório 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```
+  git clone https://github.com/davi-santos5/dio-restaurant-search.git
+  ```
 
-### `yarn eject`
+- instale as dependências
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  ````
+  yarn add
+  ````
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- crie um arquivo `.env` e insira uma chave de API do Google (poderá obter uma no [Google Cloud Platfrom](https://console.cloud.google.com/)) conforme abaixo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  ```
+  REACT_APP_GOOGLE_API_KEY=suaChaveAqui
+  ```
+  
+- execute o projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ```
+  yarn start
+  ```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ou acesse a aplicação: [Restaurant Search](https://restaurant-search-dio.netlify.app/)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![demo](./src/assets/demo.gif)
